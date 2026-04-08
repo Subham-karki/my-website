@@ -5,22 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nepstro</title>
      <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <nav>
-    <ul class="navbar">
-        <li class="logo">Nepstro</li>
-        <li><a href="#" ;">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
+    <div class ="navbar">
+        <h1 class="logo">Nepstro</h1>
+        <div class="menu">
+        <ul>
+        <li><a href="website1.html" class="active" style="color: orange;">Mainpage</a></li>
+        <li><a href="home.html" target="_blank">Home</a></li>
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="gallery.html" target="_blank">Gallery</a></li>
+        <li><a href="contact.html" target="_blank">Contact</a></li>
+        <li><i class="fas fa-bars" id="menu-button"></i></li>
+        </ul>
+        
+        <ul class="sidebar" id="sidebar">
+        <li><i class="fas fa-times" id="close-button" style="font-size: 25px;"></i></li>
+        <li><a href="website1.html" class="active" style="color: orange;">Mainpage</a></li>
+        <li><a href="home.html" target="_blank">Home</a></li>
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="gallery.html" target="_blank">Gallery</a></li>
+        <li><a href="contact.html" target="_blank">Contact</a></li>
+        </ul>
+       </div>
+    </div>
+    </nav>
 <br><br><br><br><br><br><br><br><br>
-   <H1 align="center" aria-setsize="30" style="color: #fefefe;">===NEPSTRO===</H1>
-   <h2 align="center" style="color: #fefefe;">Hike with Bro</h2>
-   <hr color="black" width="50%" align="center">
+<div class="content" align="center">
+   <H1 style="font-size: 50px;">NEPSTRO</H1>
+   <h2 >Hike with Bro</h2>
    <br>
+   </div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <footer>
         <div class="container">
@@ -59,5 +76,17 @@
             </p>
         </div>
     </footer>
+    <script>
+       const menuButton = document.getElementById('menu-button');
+        const sidebar = document.getElementById('sidebar');
+
+        menuButton.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+        const closeButton = document.getElementById('close-button');
+        closeButton.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+        });
+    </script>
 </body>
 </html>
