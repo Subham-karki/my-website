@@ -34,7 +34,6 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-
 .navbar ul {
     display: flex;
     gap: 20px;
@@ -67,30 +66,57 @@ body {
     color: #fafafa;
     border-bottom: 2px solid #6FBF4B;
 }
-
-.content {
-    max-width: 500px;
-    margin-top: 120px;
-    padding-left: 8%;
+.About_us_section {
+    display: flex;
+    padding: 20px 50px;
+    margin-top: 60px;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 5px;
+    align-items: flex-start;
+    
 }
-
-.content h1 {
-    font-size: 3rem;
-    color: #F5E6CA;
+.About_us_section h1 {
+    font-size: 36px;
+   border-bottom: 2px solid #bbff83;
+    width: 300px;
+    padding-bottom: 5 px;
+    color: #000000;
+     font-family: 'Playfair Display', serif;
+    
 }
-
-.content h2 {
-    font-size: 18px;
-    color: #ddd;
-    line-height: 1.6;
-}
-
-.content p {
+.About_us_section p {
     font-size: 14px;
-    color: #ccc;
+    line-height: 1.6;
+    max-width: 600px;
+    padding-top: 20px;
+    text-align: left ;
 }
-
-
+.About_us_section .image img {
+    padding:60px 10px ;
+    width: 350px;
+    height: 300px;
+    border-radius: 100%;
+    background-color:transparent;
+}
+.About_us_section span {
+    color: #194305;
+    font-weight: bold;
+    font-size: 20px;
+}
+.About_us_section a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+.About_us_section a:hover {
+    background-color:#2f8b04 ;
+    color: #ffffff;
+    border-radius: 5px;
+}
 .explore-button {
     display: flex;
     gap: 20px;
