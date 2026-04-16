@@ -4,8 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="menu.css">
 </head>
 <body>
-    
+     <nav>
+    <div class ="navbar">
+        <h1 class="logo" style="color: white;">Nepstro</h1>
+        <div class="menu">
+        <ul>
+        <li><a href="website1.html" >Mainpage</a></li>
+        <li><a href="home.html" target="_blank" class="active">Home</a></li>
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="gallery.html" target="_blank">Menu</a></li>
+        <li><a href="contact.html" target="_blank">Contact</a></li>
+        <li ><i class="fas fa-bars" id="menu-button" ></i></li>
+        </ul>
+        
+        <ul class="sidebar" id="sidebar">
+        <li><i class="fas fa-times" id="close-button" style="font-size: 25px;"></i></li>
+        <li ><a href="website1.html" >Mainpage</a></li>
+        <li><a href="#" target="_blank">Guides</a></li>
+        <li><a href="#" target="_blank">RoadMaps</a></li>
+        <li><a href="home.html" target="_blank" class="active">Home</a></li>
+        <li><a href="#" target="_blank">Itineraries</a></li>
+        </ul>
+       </div>
+    </div>
+    </nav>
+    <div class="Menu_section">
+        <div class="Menu_Title">
+            <h1>MENU</h1>
+        </div>
+        <div class="menuimage">
+            <a href="meni1.jpg"><img src="meni1.jpg" alt="Food1"> Coffee</a>
+            <a href="menu2.png"><img src="menu2.png" alt="Food1"> Milk Tea </a>
+            <a href="menu3.png"><img src="menu3.png" alt="Food1"> Black Tea</a>
+            <a href="menu4.jpg"><img src="menu4.jpg" alt="Food1"> Matcha Tea</a>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <hr color="white">
+
+                <p>Email:Info@example.com</p>
+                <p>Phone:+00000000009</p>
+                <p>Address:Trade tower, Thapathali</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <hr color="white">
+                 <ul class="list">
+                    <li><a href="website1.html" >Mainpage</a></li>
+                    <li><a href="home.html" target="_blank" class="active">Home</a></li>
+                    <li><a href="form.html" target="_blank" >About</a></li>
+                    <li><a href="#" target="_blank" >Services</a></li>
+                    <li><a href="#" target="_blank" >Products</a></li>
+                    <li><a href="#" target="_blank" >Contact</a></li>
+                 </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <hr color="white">
+                <ul class="social-icons">
+                 <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                 <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                 <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                 <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+                </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2026 Nepstro . Made by Subham Karki
+            </p>
+        </div>
+    </footer>
+</div>
+  
+    <script>
+       const menuButton = document.getElementById('menu-button');
+        const sidebar = document.getElementById('sidebar');
+
+        menuButton.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+        const closeButton = document.getElementById('close-button');
+        closeButton.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+        });
+    </script>
 </body>
 </html>

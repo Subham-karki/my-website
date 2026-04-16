@@ -9,94 +9,23 @@
      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-    <div class ="navbar">
-        <h1 class="logo" style="color: white;">Nepstro</h1>
-        <div class="menu">
-        <ul>
-        <li><a href="website1.html" class="active">Mainpage</a></li>
-        <li><a href="home.html" target="_blank">Home</a></li>
-        <li><a href="about.html" target="_blank">About</a></li>
-        <li><a href="gallery.html" target="_blank">Menu</a></li>
-        <li><a href="contact.html" target="_blank">Contact</a></li>
-        <li ><i class="fas fa-bars" id="menu-button" ></i></li>
-        </ul>
-        
-        <ul class="sidebar" id="sidebar">
-        <li><i class="fas fa-times" id="close-button" style="font-size: 25px;"></i></li>
-        <li ><a href="website1.html" class="active" >Mainpage</a></li>
-        <li><a href="#" target="_blank">Guides</a></li>
-        <li><a href="#" target="_blank">RoadMaps</a></li>
-        <li><a href="home.html" target="_blank">Home</a></li>
-        <li><a href="#" target="_blank">Itineraries</a></li>
-        </ul>
-       </div>
-    </div>
-    </nav>
-<div class="content">
-   <H1 style="font-size: 50px;">NEPSTRO</H1>
-   <h2 > Perfect place to relax</h2>
-   <h2> Cozy vibes and aesthetic ambience</h2>
-   <p> Chiya</p>
-   <br>
-   </div>
-   <div class="explore-button">
-    <a href="
-    #" target="_blank" style="color: white;"> Order Now</a>
-<a href="
-    #" target="_blank" style="color: white;"> Contact us</a>
-</div>
-<footer>
-        <div class="container">
-            <div class="footer-content">
-                <h3>Contact Us</h3>
-                <hr color="white">
-
-                <p>Email:Info@example.com</p>
-                <p>Phone:+00000000009</p>
-                <p>Address:Trade tower, Thapathali</p>
-            </div>
-            <div class="footer-content">
-                <h3>Quick Links</h3>
-                <hr color="white">
-                 <ul class="list">
-                    <li><a href="website1.html" class="active">Mainpage</a></li>
-                    <li><a href="home.html" target="_blank" >Home</a></li>
-                    <li><a href="form.html" target="_blank" >About</a></li>
-                    <li><a href="#" target="_blank" >Services</a></li>
-                    <li><a href="#" target="_blank" >Products</a></li>
-                    <li><a href="#" target="_blank" >Contact</a></li>
-                 </ul>
-            </div>
-            <div class="footer-content">
-                <h3>Follow Us</h3>
-                <hr color="white">
-                <ul class="social-icons">
-                 <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                 <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                 <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                 <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-                </ul>
-                </div>
-        </div>
-        <div class="bottom-bar">
-            <p>&copy; 2026 Nepstro . Made by Subham Karki
-            </p>
-        </div>
-    </footer>
-</div>
+        <div class="slider-wrapper">
   
-    <script>
-       const menuButton = document.getElementById('menu-button');
-        const sidebar = document.getElementById('sidebar');
+            <figure>
+                <img src="tea background.png" alt="slide1img">
+                <img src="mainpage2.jpg" alt="slide2img">
+                <img src="mainpage3.jpg" alt="slide3img">
+            </figure>
+            <div class="started-button">
+            <H1 style="font-size: 100px;">NEPSTRO</H1>
+            <a href="home.html" style="color: white;"> Get Started</a>
+            </div>
+        </div>
+        <div class="map">
+            <H1>OUR LOCATIONS</H1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.776068290421!2d85.3189045!3d27.693315199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19b19295555f%3A0xabfe5f4b310f97de!2sThe%20British%20College%2C%20Kathmandu!5e0!3m2!1sen!2snp!4v1776156476891!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        menuButton.addEventListener('click', () => {
-            sidebar.classList.toggle('active');
-        });
-        const closeButton = document.getElementById('close-button');
-        closeButton.addEventListener('click', () => {
-            sidebar.classList.remove('active');
-        });
-    </script>
+        </div>
+ 
 </body>
 </html>
