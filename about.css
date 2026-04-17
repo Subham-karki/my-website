@@ -2,8 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: 
-    url("tea background.png");
+    background: url("tea background.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -83,7 +82,11 @@ body {
     padding-bottom: 5 px;
     color: #000000;
      font-family: 'Playfair Display', serif;
+
     
+}
+.About_us_section .image {
+  display: flex;
 }
 .About_us_section p {
     font-size: 14px;
@@ -92,6 +95,7 @@ body {
     padding-top: 20px;
     text-align: left ;
 }
+
 .About_us_section .image img {
     padding:60px 10px ;
     width: 350px;
