@@ -68,12 +68,12 @@ body{
 /* ===== MENU SECTION ===== */
 .Menu{
     padding:70px 60px;
-    background:rgb(204, 239, 174);
+    background:#f5ede1;
     backdrop-filter:blur(5px);
     margin-top:50px;
 }
 
-/* ===== TITLE ===== */
+
 .Menu .title{
     text-align:center;
     margin-bottom:50px;
@@ -81,7 +81,7 @@ body{
 
 .Menu .title h1{
     font-size:52px;
-    color:#000000;
+    color: #1f2226;
     font-family:'Playfair Display',serif;
     letter-spacing:1px;
     margin:0;
@@ -92,7 +92,7 @@ body{
     content:"";
     width:120px;
     height:3px;
-    background:#ffffff;
+    background:#6b8e23;
     display:block;
     margin:15px auto 0;
     border-radius:5px;
@@ -108,8 +108,9 @@ body{
 .Menu .row1 .img{
     display:flex;
     gap:22px;
-    background:rgba(255,255,255,0.95);
+    background: #fffaf3;
     padding:22px;
+    border: #e7dcc8;
     border-radius:18px;
     box-shadow:0 10px 25px rgba(0,0,0,0.18);
     transition:0.3s ease;
@@ -143,12 +144,12 @@ body{
 .Menu .row1 .img .imgcontent h2{
     margin:0;
     font-size:28px;
-    color:#1F2226;
+    color: #7a5c3e;
     font-weight:700;
 }
 
 .Menu .row1 .img .imgcontent .price{
-    color:#6FBF4B;
+    color:#4f6f52;
     font-size:22px;
     font-weight:700;
     margin:8px 0;

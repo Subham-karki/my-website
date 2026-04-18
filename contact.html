@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepstro/Contact us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+     <nav>
+    <div class ="navbar">
+        <h1 class="logo" style="color: white;">Nepstro</h1>
+        <div class="menu">
+        <ul>
+        <li><a href="index.html" >Mainpage</a></li>
+        <li><a href="home.html" target="_blank" >Home</a></li>
+        <li><a href="about.html" target="_blank" >About</a></li>
+        <li><a href="reviews.html" target="_blank">Review</a></li>
+        <li><a href="menu.html" target="_blank">Menu</a></li>
+        <li><a href="contact.html" target="_blank" class="active">Contact</a></li>
+        <li ><i class="fas fa-bars" id="menu-button" ></i></li>
+        </ul>
+        
+        <ul class="sidebar" id="sidebar">
+        <li><i class="fas fa-times" id="close-button" style="font-size: 25px;"></i></li>
+         <li><a href="index.html" >Mainpage</a></li>
+        <li><a href="home.html" target="_blank" >Home</a></li>
+        <li><a href="about.html" target="_blank" >About</a></li>
+        <li><a href="reviews.html" target="_blank">Review</a></li>
+        <li><a href="menu.html" target="_blank">Menu</a></li>
+        <li><a href="contact.html" target="_blank" class="active">Contact</a></li>
+        </ul>
+       </div>
+    </div>
+    </nav>
+<br>
+
+    <div class="Contactcontainer">
+        <h1> Contact us </h1>
+        <div id="erroroccured"></div>
+        <form id="contactForm">
+        <div class="input">
+        <input type="text" id="name" placeholder="Enter your name: "><br>
+        <input type="text" id="phonenumber" placeholder="Enter your phone number: "><br>
+        <input type="text" id="email" placeholder="Enter your email: "><br>
+        <textarea id="message" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit">Send message</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event){
+            event.preventDefault();
+            let Name = document.getElementById("name").value.trim();
+            let Number = document.getElementById("phonenumber").value.trim();
+            let Email = document.getElementById("email").value.trim();
+            let Message = document.getElementById("message").value.trim();
+            let error = document.getElementById("erroroccured");
+            error.innerHTML ="";
+
+            if (Name == ""){
+                error.innerHTML = "Please enter your name";
+                return false;
+            }
+            if (Number == "" || isNaN(Number)){
+                error.innerHTML = "Please enter your phone number(only numbers)";
+                return false;
+            }
+            if (Email == "" || !Email.includes("@")){
+                error.innerHTML = "Enter valid email";
+                return false;
+            }
+            if (Message == ""){
+                error.innerHTML= "Please enter your message";
+                return;
+            }
+            alert("Form submitted successfully, Thank you for your feedback");
+            return true;
+        });
+    </script>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <hr color="white">
+
+                <p>Email:Info@example.com</p>
+                <p>Phone:+00000000009</p>
+                <p>Address:Trade tower, Thapathali</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <hr color="white">
+                 <ul class="list">
+                    <li><a href="index.html" >Mainpage</a></li>
+                    <li><a href="home.html" target="_blank" >Home</a></li>
+                    <li><a href="about.html" target="_blank" >About</a></li>
+                    <li><a href="reviews.html" target="_blank">Review</a></li>
+                    <li><a href="menu.html" target="_blank">Menu</a></li>
+                    <li><a href="contact.html" target="_blank" class="active">Contact</a></li>
+                 </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <hr color="white">
+                <ul class="social-icons">
+                 <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                 <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                 <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                 <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+                </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2026 Nepstro . Made by Subham Karki
+            </p>
+        </div>
+    </footer>
+</div>
+  
+    <script>
+       const menuButton = document.getElementById('menu-button');
+        const sidebar = document.getElementById('sidebar');
+
+        menuButton.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+        const closeButton = document.getElementById('close-button');
+        closeButton.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
